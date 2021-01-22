@@ -2,6 +2,7 @@
     "name": "jhonzya/supercell-api-php",
     "description": "Supercell APIs",
     "type": "library",
+    "homepage": "https://github.com/jhonzya/supercell-api-php",
     "license": "GNU Public License",
     "authors": [
         {
