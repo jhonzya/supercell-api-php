@@ -24,5 +24,21 @@
     ],
     "require-dev": {
         "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jhonzya\\SupercellApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jhonzya\\SupercellApi\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
