@@ -2,7 +2,6 @@
 
 namespace Jhonzya\SupercellApi\Test\ClashOfClans;
 
-use Jhonzya\SupercellApi\ClashOfClans;
 use Jhonzya\SupercellApi\Test\ClashOfClansBase;
 
 class ClansTest extends ClashOfClansBase

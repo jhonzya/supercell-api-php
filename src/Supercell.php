@@ -20,16 +20,23 @@ class Supercell
     /**
      * @param $url
      * @param array $query
+     * @param array $body
      * @param string $format
+     * @param string $type
      * @return array|string
      * @throws GuzzleException
      */
-    public function request($url, array $query = [], string $format = 'json')
+    public function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
     {
-        $response = $this->client->get($url, [
-            'query' => $query,
-            'headers' => ['authorization' => 'Bearer ' . $this->token]
-        ]);
+        $response = $this->client->request(
+            $type,
+            $url,
+            [
+                'query' => $query,
+                'form_params' => $body,
+                'headers' => ['authorization' => 'Bearer ' . $this->token]
+            ]
+        );
 
         $contents = $response->getBody()->getContents();
 
