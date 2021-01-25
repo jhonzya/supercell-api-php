@@ -20,7 +20,7 @@ trait LocationsTrait
      */
     public function getPlayerVersusRankings($locationId, array $query = [], string $format = 'json')
     {
-        return $this->request("/locations/{$locationId}/rankings/players-versus", $query, [], $format);
+        return $this->request("locations/{$locationId}/rankings/players-versus", $query, [], $format);
     }
 
     /**
@@ -33,7 +33,7 @@ trait LocationsTrait
      */
     public function getClanRankings($locationId, array $query = [], string $format = 'json')
     {
-        return $this->request("/locations/{$locationId}/rankings/clans", $query, [], $format);
+        return $this->request("locations/{$locationId}/rankings/clans", $query, [], $format);
     }
 
     /**
@@ -46,7 +46,7 @@ trait LocationsTrait
      */
     public function getPlayerRankings($locationId, array $query = [], string $format = 'json')
     {
-        return $this->request("/locations/{$locationId}/rankings/players", $query, [], $format);
+        return $this->request("locations/{$locationId}/rankings/players", $query, [], $format);
     }
 
     /**
@@ -58,7 +58,7 @@ trait LocationsTrait
      */
     public function getLocations(array $query = [], string $format = 'json')
     {
-        return $this->request("/locations", $query, [], $format);
+        return $this->request("locations", $query, [], $format);
     }
 
     /**
@@ -70,7 +70,7 @@ trait LocationsTrait
      */
     public function getLocation($locationId, string $format = 'json')
     {
-        return $this->request("/locations/{$locationId}", [], [], $format);
+        return $this->request("locations/{$locationId}", [], [], $format);
     }
 
     /**
@@ -83,6 +83,6 @@ trait LocationsTrait
      */
     public function getClanVersusRankings($locationId, array $query = [], string $format = 'json')
     {
-        return $this->request("/locations/{$locationId}/rankings/clans-versus", $query, [], $format);
+        return $this->request("locations/{$locationId}/rankings/clans-versus", $query, [], $format);
     }
 }

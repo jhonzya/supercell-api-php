@@ -19,7 +19,7 @@ trait LeaguesTrait
      */
     public function getLeague($leagueId, string $format = 'json')
     {
-        return $this->request("/leagues/{$leagueId}", [], [], $format);
+        return $this->request("leagues/{$leagueId}", [], [], $format);
     }
 
     /**
@@ -31,7 +31,7 @@ trait LeaguesTrait
      */
     public function getLeagues(array $query = [], string $format = 'json')
     {
-        return $this->request("/leagues", $query, [], $format);
+        return $this->request("leagues", $query, [], $format);
     }
 
     /**
@@ -44,7 +44,7 @@ trait LeaguesTrait
      */
     public function getLeagueSeasons($leagueId, array $query = [], string $format = 'json')
     {
-        return $this->request("/leagues/{$leagueId}/seasons", $query, [], $format);
+        return $this->request("leagues/{$leagueId}/seasons", $query, [], $format);
     }
 
     /**
@@ -56,7 +56,7 @@ trait LeaguesTrait
      */
     public function getWarLeague($leagueId, string $format = 'json')
     {
-        return $this->request("/warleagues/{$leagueId}", [], [], $format);
+        return $this->request("warleagues/{$leagueId}", [], [], $format);
     }
 
     /**
@@ -70,7 +70,7 @@ trait LeaguesTrait
      */
     public function getLeagueSeasonRankings($leagueId, $seasonId, array $query = [], string $format = 'json')
     {
-        return $this->request("/leagues/{$leagueId}/seasons/{$seasonId}", $query, [], $format);
+        return $this->request("leagues/{$leagueId}/seasons/{$seasonId}", $query, [], $format);
     }
 
     /**
@@ -82,6 +82,6 @@ trait LeaguesTrait
      */
     public function getWarLeagues(array $query = [], string $format = 'json')
     {
-        return $this->request("/warleagues", $query, [], $format);
+        return $this->request("warleagues", $query, [], $format);
     }
 }

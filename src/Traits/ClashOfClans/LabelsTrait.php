@@ -19,7 +19,7 @@ trait LabelsTrait
      */
     public function getPlayerLabels(array $query = [], string $format = 'json')
     {
-        return $this->request("/labels/players", $query, [], $format);
+        return $this->request("labels/players", $query, [], $format);
     }
 
     /**
@@ -31,7 +31,7 @@ trait LabelsTrait
      */
     public function getClanLabels(array $query = [], string $format = 'json')
     {
-        return $this->request("/labels/clans", $query, [], $format);
+        return $this->request("labels/clans", $query, [], $format);
     }
 
 }

@@ -18,6 +18,6 @@ trait GoldpassTrait
      */
     public function getGoldpass(string $format = 'json')
     {
-        return $this->request("/goldpass/seasons/current", [], [], $format);
+        return $this->request("goldpass/seasons/current", [], [], $format);
     }
 }

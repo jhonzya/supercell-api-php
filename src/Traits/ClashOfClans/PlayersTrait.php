@@ -19,7 +19,7 @@ trait PlayersTrait
      */
     public function getPlayer($playerTag, string $format = 'json')
     {
-        return $this->request("/players/{$playerTag}", [], [], $format);
+        return $this->request("players/{$playerTag}", [], [], $format);
     }
 
     /**
@@ -34,7 +34,7 @@ trait PlayersTrait
      */
     public function verifyPlayerToken($playerTag, string $token, string $format = 'json')
     {
-        return $this->request("/players/{$playerTag}/verifytoken", [], [
+        return $this->request("players/{$playerTag}/verifytoken", [], [
             'token' => $token
         ], $format, 'post');
     }

@@ -19,7 +19,7 @@ trait ClansTrait
      */
     public function getClanCurrentWar($clanTag, string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}/currentwar", [], [], $format);
+        return $this->request("clans/{$clanTag}/currentwar", [], [], $format);
     }
 
     /**
@@ -31,7 +31,7 @@ trait ClansTrait
      */
     public function getClanLeagueGroup($clanTag, string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}/currentwar/leaguegroup", [], [], $format);
+        return $this->request("clans/{$clanTag}/currentwar/leaguegroup", [], [], $format);
     }
 
     /**
@@ -43,7 +43,7 @@ trait ClansTrait
      */
     public function getClan($clanTag, string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}", [], [], $format);
+        return $this->request("clans/{$clanTag}", [], [], $format);
     }
 
     /**
@@ -55,7 +55,7 @@ trait ClansTrait
      */
     public function getClanWarLeague($warTag, string $format = 'json')
     {
-        return $this->request("/clanwarleagues/wars/{$warTag}", [], [], $format);
+        return $this->request("clanwarleagues/wars/{$warTag}", [], [], $format);
     }
 
     /**
@@ -69,7 +69,7 @@ trait ClansTrait
      */
     public function getClanWarLog($clanTag, array $query = [], string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}/warlog", $query, [], $format);
+        return $this->request("clans/{$clanTag}/warlog", $query, [], $format);
     }
 
     /**
@@ -81,7 +81,7 @@ trait ClansTrait
      */
     public function getClanMembers($clanTag, array $query = [], string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}/members", $query, [], $format);
+        return $this->request("clans/{$clanTag}/members", $query, [], $format);
     }
 
     /**
@@ -96,7 +96,7 @@ trait ClansTrait
      */
     public function getClans(array $query = [], string $format = 'json')
     {
-        return $this->request("/clans", $query, [], $format);
+        return $this->request("clans", $query, [], $format);
     }
 
 }
