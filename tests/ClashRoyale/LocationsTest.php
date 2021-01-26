@@ -50,5 +50,4 @@ class LocationsTest extends ClashRoyaleBase
     {
         $this->executeRequestWithTagTest('getGlobalTournamentRankings');
     }
-
 }

@@ -33,5 +33,4 @@ trait LabelsTrait
     {
         return $this->request("labels/clans", $query, [], $format);
     }
-
 }

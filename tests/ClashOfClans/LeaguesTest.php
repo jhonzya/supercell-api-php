@@ -36,5 +36,4 @@ class LeaguesTest extends ClashOfClansBase
     {
         $this->executeRequestWithoutTagTest('getWarLeagues');
     }
-
 }

@@ -20,5 +20,4 @@ class PlayersTest extends ClashRoyaleBase
     {
         $this->executeRequestWithTagTest('getPlayerBattleLog');
     }
-
 }

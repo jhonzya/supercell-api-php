@@ -120,5 +120,4 @@ trait LocationsTrait
     {
         return $this->request("locations/global/rankings/tournaments/{$tournamentTag}", $query, [], $format);
     }
-
 }

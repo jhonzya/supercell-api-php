@@ -98,5 +98,4 @@ trait ClansTrait
     {
         return $this->request("clans", $query, [], $format);
     }
-
 }

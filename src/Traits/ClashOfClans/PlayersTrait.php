@@ -38,5 +38,4 @@ trait PlayersTrait
             'token' => $token
         ], $format, 'post');
     }
-
 }

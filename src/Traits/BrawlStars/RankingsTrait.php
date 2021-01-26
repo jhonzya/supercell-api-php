@@ -69,7 +69,7 @@ trait RankingsTrait
 
     /**
      * Get player rankings for a country or global rankings.
-     * 
+     *
      * @param $countryCode
      * @param array $query
      * @param string $format

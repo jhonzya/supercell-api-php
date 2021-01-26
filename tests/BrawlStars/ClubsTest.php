@@ -15,5 +15,4 @@ class ClubsTest extends BrawlStarsBase
     {
         $this->executeRequestWithTagTest('getClub');
     }
-
 }

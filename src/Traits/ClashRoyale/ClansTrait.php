@@ -99,5 +99,4 @@ trait ClansTrait
     {
         return $this->request("clans/{$clanTag}/currentriverrace", [], [], $format);
     }
-
 }

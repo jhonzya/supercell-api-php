@@ -40,5 +40,4 @@ class ClansTest extends ClashRoyaleBase
     {
         $this->executeRequestWithTagTest('getClanCurrentRiverRace');
     }
-
 }

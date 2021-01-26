@@ -45,5 +45,4 @@ trait PlayersTrait
     {
         return $this->request("players/{$playerTag}/battlelog", [], [], $format);
     }
-
 }
