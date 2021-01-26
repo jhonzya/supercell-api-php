@@ -1,0 +1,16 @@
+[
+  {
+    "clan": {
+      "badgeId": 0,
+      "tag": "string",
+      "name": "string",
+      "badgeUrls": {}
+    },
+    "wins": 0,
+    "losses": 0,
+    "tag": "string",
+    "name": "string",
+    "rank": 0,
+    "previousRank": 0
+  }
+]

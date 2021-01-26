@@ -5,7 +5,7 @@ namespace Jhonzya\SupercellApi;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
-class Supercell
+abstract class Supercell
 {
     protected $token;
     protected $client;
@@ -26,7 +26,7 @@ class Supercell
      * @return array|string
      * @throws GuzzleException
      */
-    public function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
+    protected function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
     {
         $response = $this->getHttpClient()->request(
             $type,
@@ -59,7 +59,7 @@ class Supercell
     /**
      * @return Client
      */
-    public function getHttpClient(): Client
+    protected function getHttpClient(): Client
     {
         if (is_null($this->client)) {
             $this->client = new Client([
