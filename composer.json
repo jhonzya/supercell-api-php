@@ -1,6 +1,6 @@
 {
     "name": "jhonzya/supercell-api-php",
-    "description": "Supercell APIs",
+    "description": "The simplest PHP wrapper for Supercell API",
     "type": "library",
     "homepage": "https://github.com/jhonzya/supercell-api-php",
     "license": "GNU Public License",
