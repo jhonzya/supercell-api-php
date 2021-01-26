@@ -28,7 +28,7 @@ abstract class Supercell
      * @throws GuzzleException
      * @return array|string
      */
-    protected function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
+    public function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
     {
         $response = $this->getHttpClient()->request(
             $type,
@@ -44,10 +44,10 @@ abstract class Supercell
 
         switch ($format) {
             case 'array':
-                $response = json_decode($contents);
+                $response = json_decode($contents, true);
                 break;
             case 'object':
-                $response = json_decode($contents, true);
+                $response = json_decode($contents);
                 break;
             case 'json':
             default:
@@ -61,7 +61,7 @@ abstract class Supercell
     /**
      * @return Client
      */
-    protected function getHttpClient(): Client
+    public function getHttpClient(): Client
     {
         if (is_null($this->client)) {
             $this->client = new Client([

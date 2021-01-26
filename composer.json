@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "jhonzya/supercell-api-php",
     "description": "The simplest PHP wrapper for Supercell API",
     "keywords": [
@@ -20,12 +20,13 @@
         }
     ],
     "require": {
-        "php": "^8.0|^7.0",
+        "php": "^8.0|^7.3",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "^7.0",
         "ext-json": "*"
     },
     "require-dev": {
+        "nunomaduro/collision": "^5.3",
         "phpunit/phpunit": "^9"
     },
     "autoload": {
