@@ -20,12 +20,13 @@
         }
     ],
     "require": {
-        "php": "^8.0|^7.0",
+        "php": "^8.0|^7.3",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "^7.0",
         "ext-json": "*"
     },
     "require-dev": {
+        "nunomaduro/collision": "^5.3",
         "phpunit/phpunit": "^9"
     },
     "autoload": {

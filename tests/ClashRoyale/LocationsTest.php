@@ -31,7 +31,7 @@ class LocationsTest extends ClashRoyaleBase
         $this->executeRequestWithTagTest('getTopPlayerRankingsLeagueSeason');
     }
 
-    public function tesGetTopPlayersLeagueSeason()
+    public function testGetTopPlayersLeagueSeason()
     {
         $this->executeRequestWithoutTagTest('getTopPlayersLeagueSeason');
     }
