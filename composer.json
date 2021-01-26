@@ -1,4 +1,5 @@
 {
+    "version": "0.0.1",
     "name": "jhonzya/supercell-api-php",
     "description": "The simplest PHP wrapper for Supercell API",
     "keywords": [
