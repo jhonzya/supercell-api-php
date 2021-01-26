@@ -2,8 +2,12 @@
 
 namespace Jhonzya\SupercellApi\Test;
 
+use Jhonzya\SupercellApi\ClashOfClans;
+
 class ClashOfClansBase extends SupercellBase
 {
+    protected $classname = ClashOfClans::class;
+
     /**
      * @param string $file
      * @return false|string

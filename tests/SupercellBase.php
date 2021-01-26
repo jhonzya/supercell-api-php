@@ -6,13 +6,13 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Jhonzya\SupercellApi\ClashOfClans;
 use PHPUnit\Framework\TestCase;
 
 abstract class SupercellBase extends TestCase
 {
     protected $token = 'random';
     protected $tag = '#random';
+    protected $classname;
 
     /**
      * @param string $file
@@ -42,7 +42,7 @@ abstract class SupercellBase extends TestCase
         $json = $this->getJsonResponse("{$name}.json");
         $client = $this->getMockClient($json);
 
-        $coc = new ClashOfClans($this->token, $client);
+        $coc = new $this->classname($this->token, $client);
         $response = $coc->$name($this->tag);
 
         $this->assertEquals($json, $response);
@@ -53,7 +53,7 @@ abstract class SupercellBase extends TestCase
         $json = $this->getJsonResponse("{$name}.json");
         $client = $this->getMockClient($json);
 
-        $coc = new ClashOfClans($this->token, $client);
+        $coc = new $this->classname($this->token, $client);
         $response = $coc->$name();
 
         $this->assertEquals($json, $response);
