@@ -1,21 +1,6 @@
 {
     "name": "jhonzya/supercell-api-php",
     "description": "The simplest PHP wrapper for Supercell API",
-    "type": "library",
-    "homepage": "https://github.com/jhonzya/supercell-api-php",
-    "license": "GNU Public License",
-    "authors": [
-        {
-            "name": "Jonathan Salinas",
-            "email": "a.jonathan.sl@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": "^8.0|^7.0",
-        "ext-curl": "*",
-        "guzzlehttp/guzzle": "^7.0"
-    },
     "keywords": [
         "supercell",
         "clashofclans",
@@ -24,6 +9,21 @@
         "api",
         "php"
     ],
+    "homepage": "https://github.com/jhonzya/supercell-api-php",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jonathan Salinas",
+            "email": "a.jonathan.sl@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^7.0",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9"
     },
@@ -40,6 +40,8 @@
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true
     }
