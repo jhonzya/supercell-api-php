@@ -26,6 +26,7 @@
         "ext-json": "*"
     },
     "require-dev": {
+        "nunomaduro/collision": "^5.3",
         "phpunit/phpunit": "^9"
     },
     "autoload": {
