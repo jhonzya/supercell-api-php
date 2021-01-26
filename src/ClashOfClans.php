@@ -17,4 +17,6 @@ class ClashOfClans extends Supercell
     use GoldpassTrait;
     use LabelsTrait;
     use LocationsTrait;
+
+    protected $api = 'https://api.clashofclans.com/v1/';
 }
