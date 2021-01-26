@@ -48,7 +48,7 @@ trait ClansTrait
      */
     public function getClanRiverRaceLog($clanTag, array $query = [], string $format = 'json')
     {
-        return $this->request("/clans/{$clanTag}/riverracelog", $query, [], $format);
+        return $this->request("clans/{$clanTag}/riverracelog", $query, [], $format);
     }
 
     /**
