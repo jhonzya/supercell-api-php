@@ -1,0 +1,15 @@
+[
+  {
+    "club": {
+      "name": "string"
+    },
+    "icon": {
+      "id": 0
+    },
+    "trophies": 0,
+    "tag": "string",
+    "name": "string",
+    "rank": 0,
+    "nameColor": "string"
+  }
+]
