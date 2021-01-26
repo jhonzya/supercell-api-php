@@ -1,0 +1,44 @@
+{
+  "state": "string",
+  "clan": {
+    "tag": "string",
+    "clanScore": 0,
+    "badgeId": 0,
+    "name": "string",
+    "fame": 0,
+    "repairPoints": 0,
+    "finishTime": "string",
+    "participants": [
+      {
+        "tag": "string",
+        "name": "string",
+        "fame": 0,
+        "repairPoints": 0,
+        "boatAttacks": 0
+      }
+    ]
+  },
+  "clans": [
+    {
+      "tag": "string",
+      "clanScore": 0,
+      "badgeId": 0,
+      "name": "string",
+      "fame": 0,
+      "repairPoints": 0,
+      "finishTime": "string",
+      "participants": [
+        {
+          "tag": "string",
+          "name": "string",
+          "fame": 0,
+          "repairPoints": 0,
+          "boatAttacks": 0
+        }
+      ]
+    }
+  ],
+  "collectionEndTime": "string",
+  "warEndTime": "string",
+  "sectionIndex": 0
+}

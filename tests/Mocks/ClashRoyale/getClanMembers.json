@@ -1,0 +1,20 @@
+[
+  {
+    "clanChestPoints": 0,
+    "arena": {
+      "name": {},
+      "id": 0,
+      "iconUrls": {}
+    },
+    "lastSeen": "string",
+    "tag": "string",
+    "name": "string",
+    "role": "string",
+    "expLevel": 0,
+    "trophies": 0,
+    "clanRank": 0,
+    "previousClanRank": 0,
+    "donations": 0,
+    "donationsReceived": 0
+  }
+]

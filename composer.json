@@ -1,27 +1,30 @@
 {
+    "version": "0.0.1",
     "name": "jhonzya/supercell-api-php",
-    "description": "Supercell APIs",
-    "type": "library",
+    "description": "The simplest PHP wrapper for Supercell API",
+    "keywords": [
+        "supercell",
+        "clashofclans",
+        "clashroyale",
+        "brawlstars",
+        "api",
+        "php"
+    ],
     "homepage": "https://github.com/jhonzya/supercell-api-php",
-    "license": "GNU Public License",
+    "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Jonathan Salinas",
             "email": "a.jonathan.sl@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
+        "php": "^8.0|^7.0",
         "ext-curl": "*",
-        "php": "^8.0|^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
     },
-    "keywords": [
-        "supercell",
-        "clashofclans",
-        "clashroyale",
-        "api",
-        "php"
-    ],
     "require-dev": {
         "phpunit/phpunit": "^9"
     },
@@ -38,6 +41,8 @@
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true
     }
