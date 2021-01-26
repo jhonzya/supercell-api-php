@@ -9,9 +9,9 @@ class Supercell
 {
     protected $token;
     protected $client;
-    protected $http;
+    protected $api;
 
-    public function __construct($token, Client $client)
+    public function __construct($token, Client $client = null)
     {
         $this->token = $token;
         $this->client = $client;
@@ -28,7 +28,7 @@ class Supercell
      */
     public function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
     {
-        $response = $this->client->request(
+        $response = $this->getHttpClient()->request(
             $type,
             $url,
             [
@@ -54,5 +54,19 @@ class Supercell
         }
 
         return $response;
+    }
+
+    /**
+     * @return Client
+     */
+    public function getHttpClient(): Client
+    {
+        if (is_null($this->client)) {
+            $this->client = new Client([
+                'base_uri' => $this->api,
+            ]);
+        }
+
+        return $this->client;
     }
 }
