@@ -7,8 +7,8 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-versions: ['7.3', '7.4']
+        operating-system: ['ubuntu-latest']
+        php-versions: ['5.3', '7.0', '8.0']
         phpunit-versions: ['latest']
         include:
           - operating-system: 'ubuntu-latest'
@@ -22,14 +22,12 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          extensions: mbstring, intl
           ini-values: post_max_size=256M, max_execution_time=180
           coverage: xdebug
-          tools: php-cs-fixer, phpunit:${{ matrix.phpunit-versions }}
+          tools: phpunit:${{ matrix.phpunit-versions }}
 
-      - name: Prepare Application
-        run: |
-          composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist --optimize-autoloader
+      - name: Install dependencies
+        run: composer install --prefer-dist
 
       - name: Run Testsuite
-        run: composer test
+        run: composer test --coverage-text
