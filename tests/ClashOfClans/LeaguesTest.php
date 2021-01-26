@@ -29,14 +29,7 @@ class LeaguesTest extends ClashOfClansBase
 
     public function testGetLeagueSeasonRankings()
     {
-        $name = 'getLeagueSeasonRankings';
-        $json = $this->getJsonResponse("{$name}.json");
-        $client = $this->getMockClient($json);
-
-        $coc = new ClashOfClans($this->token, $client);
-        $response = $coc->$name($this->tag, 'season');
-
-        $this->assertEquals($json, $response);
+        $this->executeRequestWithTwoTagsTest('getLeagueSeasonRankings');
     }
 
     public function testGetWarLeagues()

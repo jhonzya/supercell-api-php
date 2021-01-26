@@ -37,6 +37,20 @@ abstract class SupercellBase extends TestCase
     /**
      * @param $name
      */
+    protected function executeRequestWithTwoTagsTest($name)
+    {
+        $json = $this->getJsonResponse("{$name}.json");
+        $client = $this->getMockClient($json);
+
+        $coc = new $this->classname($this->token, $client);
+        $response = $coc->$name($this->tag, 'randomize');
+
+        $this->assertEquals($json, $response);
+    }
+
+    /**
+     * @param $name
+     */
     protected function executeRequestWithTagTest($name)
     {
         $json = $this->getJsonResponse("{$name}.json");
@@ -48,6 +62,9 @@ abstract class SupercellBase extends TestCase
         $this->assertEquals($json, $response);
     }
 
+    /**
+     * @param $name
+     */
     protected function executeRequestWithoutTagTest($name)
     {
         $json = $this->getJsonResponse("{$name}.json");
