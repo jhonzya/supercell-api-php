@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\BrawlStars;
 
 /**
- * Access general brawler information
+ * Access general brawler information.
  *
  * Trait BrawlersTrait
- * @package Jhonzya\SupercellApi\Traits\BrawlStars
  */
 trait BrawlersTrait
 {
@@ -19,7 +18,7 @@ trait BrawlersTrait
      */
     public function getBrawlers(array $query = [], string $format = 'json')
     {
-        return $this->request("brawlers", $query, [], $format);
+        return $this->request('brawlers', $query, [], $format);
     }
 
     /**

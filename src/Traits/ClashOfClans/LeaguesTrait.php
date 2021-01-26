@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- * Access league information
+ * Access league information.
  *
  * Trait LeaguesTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
  */
 trait LeaguesTrait
 {
@@ -31,7 +30,7 @@ trait LeaguesTrait
      */
     public function getLeagues(array $query = [], string $format = 'json')
     {
-        return $this->request("leagues", $query, [], $format);
+        return $this->request('leagues', $query, [], $format);
     }
 
     /**
@@ -82,6 +81,6 @@ trait LeaguesTrait
      */
     public function getWarLeagues(array $query = [], string $format = 'json')
     {
-        return $this->request("warleagues", $query, [], $format);
+        return $this->request('warleagues', $query, [], $format);
     }
 }

@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\BrawlStars;
 
 /**
- * Access global and local rankings
+ * Access global and local rankings.
  *
  * Trait RankingsTrait
- * @package Jhonzya\SupercellApi\Traits\BrawlStars
  */
 trait RankingsTrait
 {

@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- * Access player specific information
+ * Access player specific information.
  *
  * Trait PlayersTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
  */
 trait PlayersTrait
 {
@@ -35,7 +34,7 @@ trait PlayersTrait
     }
 
     /**
-     * Get list of recent battles for a player
+     * Get list of recent battles for a player.
      *
      * @param $playerTag
      * @param string $format

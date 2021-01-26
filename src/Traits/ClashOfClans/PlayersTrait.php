@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- * Access player specific information
+ * Access player specific information.
  *
  * Trait PlayersTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
  */
 trait PlayersTrait
 {
@@ -35,7 +34,7 @@ trait PlayersTrait
     public function verifyPlayerToken($playerTag, string $token, string $format = 'json')
     {
         return $this->request("players/{$playerTag}/verifytoken", [], [
-            'token' => $token
+            'token' => $token,
         ], $format, 'post');
     }
 }

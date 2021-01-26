@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\BrawlStars;
 
 /**
- * Access club specific information
+ * Access club specific information.
  *
  * Trait ClubsTrait
- * @package Jhonzya\SupercellApi\Traits\BrawlStars
  */
 trait ClubsTrait
 {

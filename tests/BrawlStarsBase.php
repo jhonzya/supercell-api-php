@@ -14,6 +14,6 @@ class BrawlStarsBase extends SupercellBase
      */
     protected function getJsonResponse(string $file)
     {
-        return file_get_contents(__DIR__. "/Mocks/BrawlStars/{$file}");
+        return file_get_contents(__DIR__ . "/Mocks/BrawlStars/{$file}");
     }
 }

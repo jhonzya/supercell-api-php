@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Jhonzya\SupercellApi;
 
@@ -23,8 +25,8 @@ abstract class Supercell
      * @param array $body
      * @param string $format
      * @param string $type
-     * @return array|string
      * @throws GuzzleException
+     * @return array|string
      */
     protected function request($url, array $query = [], array $body = [], string $format = 'json', string $type = 'get')
     {
@@ -34,7 +36,7 @@ abstract class Supercell
             [
                 'query' => $query,
                 'form_params' => $body,
-                'headers' => ['authorization' => 'Bearer ' . $this->token]
+                'headers' => ['authorization' => 'Bearer ' . $this->token],
             ]
         );
 

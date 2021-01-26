@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- * Access information about gold pass
+ * Access information about gold pass.
  *
  * Trait GoldpassTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
  */
 trait GoldpassTrait
 {
@@ -18,6 +17,6 @@ trait GoldpassTrait
      */
     public function getGoldpass(string $format = 'json')
     {
-        return $this->request("goldpass/seasons/current", [], [], $format);
+        return $this->request('goldpass/seasons/current', [], [], $format);
     }
 }

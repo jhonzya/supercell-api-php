@@ -3,21 +3,18 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- *
- *
- * Trait TournamentsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
+ * Trait TournamentsTrait.
  */
 trait GlobalTournamentsTrait
 {
     /**
-     * Get list of global tournaments
+     * Get list of global tournaments.
      *
      * @param string $format
      * @return array|string
      */
     public function getGlobalTournaments(string $format = 'json')
     {
-        return $this->request("globaltournaments", [], [], $format);
+        return $this->request('globaltournaments', [], [], $format);
     }
 }

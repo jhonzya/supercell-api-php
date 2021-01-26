@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- * Access clan specific information
+ * Access clan specific information.
  *
  * Trait ClansTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
  */
 trait ClansTrait
 {
@@ -65,7 +64,6 @@ trait ClansTrait
      * @param array $query
      * @param string $format
      * @return array|string
-     *
      */
     public function getClanWarLog($clanTag, array $query = [], string $format = 'json')
     {
@@ -96,6 +94,6 @@ trait ClansTrait
      */
     public function getClans(array $query = [], string $format = 'json')
     {
-        return $this->request("clans", $query, [], $format);
+        return $this->request('clans', $query, [], $format);
     }
 }

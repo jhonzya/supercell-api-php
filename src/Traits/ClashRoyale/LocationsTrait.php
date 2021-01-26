@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- * Access global and local rankings
+ * Access global and local rankings.
  *
  * Trait LocationsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
  */
 trait LocationsTrait
 {
@@ -81,7 +80,7 @@ trait LocationsTrait
      */
     public function getTopPlayersLeagueSeason(string $format = 'json')
     {
-        return $this->request("locations/global/seasons", [], [], $format);
+        return $this->request('locations/global/seasons', [], [], $format);
     }
 
     /**
@@ -93,11 +92,11 @@ trait LocationsTrait
      */
     public function getLocations(array $query = [], string $format = 'json')
     {
-        return $this->request("locations", $query, [], $format);
+        return $this->request('locations', $query, [], $format);
     }
 
     /**
-     * Get information about specific location
+     * Get information about specific location.
      *
      * @param $locationId
      * @param string $format
@@ -109,7 +108,7 @@ trait LocationsTrait
     }
 
     /**
-     * Get global tournament rankings
+     * Get global tournament rankings.
      *
      * @param $tournamentTag
      * @param array $query

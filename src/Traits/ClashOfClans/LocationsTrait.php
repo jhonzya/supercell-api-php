@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- * Get clan versus rankings for a specific location
+ * Get clan versus rankings for a specific location.
  *
  * Trait LocationsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
  */
 trait LocationsTrait
 {
@@ -24,7 +23,7 @@ trait LocationsTrait
     }
 
     /**
-     * Get clan rankings for a specific location
+     * Get clan rankings for a specific location.
      *
      * @param $locationId
      * @param array $query
@@ -37,7 +36,7 @@ trait LocationsTrait
     }
 
     /**
-     * Get player rankings for a specific location
+     * Get player rankings for a specific location.
      *
      * @param $locationId
      * @param array $query
@@ -50,7 +49,7 @@ trait LocationsTrait
     }
 
     /**
-     * List locations
+     * List locations.
      *
      * @param array $query
      * @param string $format
@@ -58,11 +57,11 @@ trait LocationsTrait
      */
     public function getLocations(array $query = [], string $format = 'json')
     {
-        return $this->request("locations", $query, [], $format);
+        return $this->request('locations', $query, [], $format);
     }
 
     /**
-     * List locations
+     * List locations.
      *
      * @param $locationId
      * @param string $format
@@ -74,7 +73,7 @@ trait LocationsTrait
     }
 
     /**
-     * Get clan versus rankings for a specific location
+     * Get clan versus rankings for a specific location.
      *
      * @param $locationId
      * @param array $query

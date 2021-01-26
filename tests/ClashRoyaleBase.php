@@ -14,6 +14,6 @@ class ClashRoyaleBase extends SupercellBase
      */
     protected function getJsonResponse(string $file)
     {
-        return file_get_contents(__DIR__. "/Mocks/ClashRoyale/{$file}");
+        return file_get_contents(__DIR__ . "/Mocks/ClashRoyale/{$file}");
     }
 }

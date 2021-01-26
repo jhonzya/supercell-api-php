@@ -3,15 +3,12 @@
 namespace Jhonzya\SupercellApi\Traits\ClashOfClans;
 
 /**
- *
- *
- * Trait LabelsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashOfClans
+ * Trait LabelsTrait.
  */
 trait LabelsTrait
 {
     /**
-     * List player labels
+     * List player labels.
      *
      * @param array $query
      * @param string $format
@@ -19,11 +16,11 @@ trait LabelsTrait
      */
     public function getPlayerLabels(array $query = [], string $format = 'json')
     {
-        return $this->request("labels/players", $query, [], $format);
+        return $this->request('labels/players', $query, [], $format);
     }
 
     /**
-     * List clan labels
+     * List clan labels.
      *
      * @param array $query
      * @param string $format
@@ -31,6 +28,6 @@ trait LabelsTrait
      */
     public function getClanLabels(array $query = [], string $format = 'json')
     {
-        return $this->request("labels/clans", $query, [], $format);
+        return $this->request('labels/clans', $query, [], $format);
     }
 }

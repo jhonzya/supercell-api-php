@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- * Access tournament information
+ * Access tournament information.
  *
  * Trait TournamentsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
  */
 trait TournamentsTrait
 {
@@ -20,7 +19,7 @@ trait TournamentsTrait
      */
     public function getTournaments(array $query = [], string $format = 'json')
     {
-        return $this->request("tournaments", $query, [], $format);
+        return $this->request('tournaments', $query, [], $format);
     }
 
     /**

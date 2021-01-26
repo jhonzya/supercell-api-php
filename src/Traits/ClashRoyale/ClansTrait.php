@@ -3,10 +3,9 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- * Access clan specific information
+ * Access clan specific information.
  *
  * Trait ClansTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
  */
 trait ClansTrait
 {
@@ -35,7 +34,7 @@ trait ClansTrait
      */
     public function getClans(array $query = [], string $format = 'json')
     {
-        return $this->request("clans", $query, [], $format);
+        return $this->request('clans', $query, [], $format);
     }
 
     /**

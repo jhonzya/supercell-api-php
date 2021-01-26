@@ -3,15 +3,14 @@
 namespace Jhonzya\SupercellApi\Traits\ClashRoyale;
 
 /**
- * Access card information
+ * Access card information.
  *
  * Trait CardsTrait
- * @package Jhonzya\SupercellApi\Traits\ClashRoyale
  */
 trait CardsTrait
 {
     /**
-     * Get list of available cards
+     * Get list of available cards.
      *
      * @param array $query
      * @param string $format
@@ -19,6 +18,6 @@ trait CardsTrait
      */
     public function getCards(array $query = [], string $format = 'json')
     {
-        return $this->request("cards", $query, [], $format);
+        return $this->request('cards', $query, [], $format);
     }
 }

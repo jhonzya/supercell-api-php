@@ -27,10 +27,11 @@ abstract class SupercellBase extends TestCase
     protected function getMockClient($json): Client
     {
         $mock = new MockHandler([
-            new Response(200, [], $json)
+            new Response(200, [], $json),
         ]);
 
         $handlerStack = HandlerStack::create($mock);
+
         return new Client(['handler' => $handlerStack]);
     }
 
